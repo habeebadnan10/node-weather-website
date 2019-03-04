@@ -2,6 +2,7 @@ const path = require('path');
 const express = require ('express');
 const hbs = require('hbs');
 
+
 let app = express();
 console.log(path.join(__dirname , '../public'))
 
