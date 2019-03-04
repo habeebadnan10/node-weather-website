@@ -4,6 +4,7 @@ const hbs = require('hbs');
 
 
 let app = express();
+let port = process.env.PORT || 3000
 console.log(path.join(__dirname , '../public'))
 
 // Define paths express config
@@ -63,6 +64,6 @@ app.get('*', (req,res) => {
    }) 
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("starting the server...")
 });
